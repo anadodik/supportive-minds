@@ -3,7 +3,7 @@ import type { Theme } from '@skeletonlabs/skeleton/themes';
 const supportiveminds = {
   "name": "supportiveminds",
   "properties": {
-    "--type-scale-factor": "1.067",
+    "--type-scale-factor": "1.2",
     "--type-scale-1": "calc(0.75rem * var(--type-scale-factor))",
     "--type-scale-2": "calc(0.875rem * var(--type-scale-factor))",
     "--type-scale-3": "calc(1rem * var(--type-scale-factor))",

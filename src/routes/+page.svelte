@@ -46,9 +46,8 @@
 	<div class="container mx-auto grid grid-cols-1 xl:grid-cols-[100px_minmax(0px,_1fr)_100px]">
 		<aside class="sticky top-0 col-span-1 hidden min-h-[50vh] p-4 xl:block"></aside>
 		<main class="col-span-1 space-y-4 p-2 min-h-[50vh] flex justify-center">
-			<div class="flex flex-col">
-
-			<div class="card p-2 m-2 mb-12 variant-soft-primary shadow-xl overflow-hidden block">
+			<div class="flex flex-col w-full">
+			<!-- <div class="card p-2 m-2 mb-12 variant-soft-primary shadow-xl overflow-hidden block">
 				<div class="p-2 flex items-center justify-start">
 				<section class="text-primary-500">
 					<article>
@@ -61,7 +60,11 @@
 					</article>
 				</section>
 				</div>
-			</div>
+			</div> -->
+			<h4 class="h4 text-center">
+				<span class="text-primary-500">Our Services</span>
+			</h4>
+			<br/>
 			<hr class="hr"/>
 			<Accordion {accordion} multiple>
 				<Accordion.Item controlHover="hover:preset-tonal-secondary" value="Specialized and Individualized Addiction Counseling">
@@ -79,9 +82,7 @@
 					{#snippet control()}Collegiate Athlete Mental Wellness Coaching{/snippet}
 					{#snippet panel()}
 						<p class="font-serif">
-						Student-athletes are  at risk than non-athlete peers for certain types of mental illnesses such as substance abuse, eating disorders, depression, and social and performance anxiety. Supportive Minds can help in these ways:
-						assisting a campus environment that supports mental wellness by working with the counseling center and the athletic department (includes efforts towards destigmatizing mental illness in the athletic programs, a procedure for identifying and referring students who need clinical help)
-						Provide direct mental health services to student-athletes on campus through mental health workshops				
+							Student-athletes are at a higher risk than their non-athlete peers for certain mental health challenges, including substance use, eating disorders, depression, and social or performance anxiety. Supportive Minds can help by collaborating with counseling centers and athletic departments to create a campus environment that prioritizes mental wellbeing. This includes efforts to destigmatize mental illness within athletic programs and developing processes for identifying and referring students who require clinical support as well as by providing direct mental health services to student-athletes through targeted workshops and individualized care. We are dedicated to supporting the mental well-being of student-athletes and ensuring they have the resources they need to thrive both on and off the field.
 						</p>
 					{/snippet}
 				</Accordion.Item>
@@ -103,7 +104,7 @@
 					{#snippet control()}Adolescent Services{/snippet}
 					{#snippet panel()}
 						<p class="font-serif">
-						We provide individual counseling to adolescents between the ages of 12-18 with a unique focus on the identity confusion and high risk behaviors that often accompany adolescents in distress. 
+							We offer individual counseling for adolescents ages 12-18, with a specialized focus on navigating identity confusion and addressing high-risk behaviors commonly associated with distress during this critical developmental stage.
 						</p>
 					{/snippet}
 				</Accordion.Item>
@@ -114,7 +115,7 @@
 					{#snippet control()}Parent Coaching{/snippet}
 					{#snippet panel()}
 						<p class="font-serif">
-						Our parent coaching is based on the CRAFT method, Community Reinforcement and Family Training. Supportive Minds uses the CRAFT method to assist care givers/ guardians/ parents to better communicate with their children struggling with addictive processes and assist in helping them set boundaries for self-care. 
+							Our parent coaching is based on the CRAFT method, Community Reinforcement and Family Training. Supportive Minds uses the CRAFT method to assist care givers/ guardians/ parents to better communicate with their children struggling with addictive processes and assist in helping them set boundaries for self-care. 
 						</p>
 					{/snippet}
 				</Accordion.Item>
@@ -125,7 +126,7 @@
 					{#snippet control()}Clinical Case Management{/snippet}
 					{#snippet panel()}
 						<p class="font-serif">
-						We provide highly individualized and culturally sensitive community based case management to not only help manage and organize care but to also help people establish and connect to a community. Our case management services are built on principles of independence, dignity, and shared decision making where we emphasize the importance of meeting the individual where they are at, which may include meeting in the home or meeting in the community alongside the person as they work towards integration. 
+							We provide highly individualized and culturally sensitive community based case management to not only help manage and organize care but to also help people establish and connect to a community. Our case management services are built on principles of independence, dignity, and shared decision making where we emphasize the importance of meeting the individual where they are at, which may include meeting in the home or meeting in the community alongside the person as they work towards integration. 
 						</p>
 					{/snippet}
 				</Accordion.Item>
@@ -136,7 +137,7 @@
 					{#snippet control()}Training/Consultation{/snippet}
 					{#snippet panel()}
 						<p class="font-serif">
-						Trusted and experienced experts in addiction psychology with a harm-reduction orientation, student-athlete mental wellness and gender diversity in organizations. We are trauma-informed and can individualize training/consultation for your organization.
+							We provide individualized, trauma-informed consultation and training to organizations looking to improve their literacy and agency practices around addiction psychology, gender and sexuality diversity, harm reduction, and student athlete mental health. 
 						</p>
 					{/snippet}
 				</Accordion.Item>
@@ -209,8 +210,8 @@
 	{#snippet about()}
 	<div class="container mx-auto grid grid-cols-1 xl:grid-cols-[100px_minmax(0px,_1fr)_100px]">
 		<aside class="sticky top-0 col-span-1 hidden min-h-[50vh] p-4 xl:block"></aside>
-		<main class="col-span-1 space-y-4 p-4 min-h-[50vh]">
-			<div class="container mx-auto grid grid-cols-7 h-3/8 gap-4 items-center">
+		<main class="col-span-1 space-y-2 p-4 min-h-[50vh]">
+			<div class="container mx-auto grid md:grid-cols-7 h-3/8 gap-4 items-center">
 				<!-- card-hover -->
 				<div class="card col-span-2 variant-soft-primary h-full overflow-hidden">
 					<section class="p-4 h-full flex flex-col items-center justify-center text-center">
@@ -237,35 +238,31 @@
 						<h5 class="h5" data-toc-ignore> Who We Are </h5>
 						<p class="font-serif">
 							<!-- cspell:disable -->
-							Supportive Minds is a specialty outpatient mental health and addiction practice with a focus on inclusivity, community, and harm-reduction.
+							Supportive Minds is a specialty outpatient mental health and addiction practice dedicated to inclusivity, community, and harm reduction. We provide care to adults, adolescents, and traditionally underserved or vulnerable populations, utilizing a variety of evidence-based clinical models of care. Our services are available in-office, in the community, or virtually to best meet the needs of our clients. As a minority-owned business, we are proud to serve and uplift diverse communities.
+							<!-- Supportive Minds is a specialty outpatient mental health and addiction practice with a focus on inclusivity, community, and harm-reduction.
 							We provide services to adults, adolescents, and traditionally vulnerable and underserved populations and are are trained in various evidence-based clinical models of care.
 							We meet our clients in our office space, in the community, or virtually.
 							Supportive Minds is minority-owned business.
 							<br/><br/>
-							We are here to help support your mind, wellness and growth no matter where you are in your recovery journey. You deserve respect for your autonomy, human connection and a safe space where you can self actualize the change you want in your life. 
+							We are here to help support your mind, wellness and growth no matter where you are in your recovery journey. You deserve respect for your autonomy, human connection and a safe space where you can self actualize the change you want in your life.  -->
 							<!-- Supportive Minds was founded by two clinicians passionate about providing community- and empowerment-oriented mental health services.  We are a specialty addictions/high-risk behaviors outpatient group practice that offers inclusive, harm-reduction-oriented addiction and mental health services. We service adult and adolescent populations that include traditionally vulnerable and underserved populations. We offer confidential and safe mental health services that are flexible and customized to our clients in the community, in our office space, or virtually on telehealth. We are trained in various evidence-based clinical models of care. We are a minority-owned business and proud to serve the people of Massachusetts.  -->
 							<!-- cspell:enable -->
 						</p>
-						<!-- <h1 class="font-bold">Mission Statement</h1> -->
-						<!-- <p class="font-serif"> -->
-							<!-- cspell:disable -->
-							<!-- We at Supportive Minds, PLLC believe in creating entry points for access to high-quality mental health services, especially for vulnerable populations (BIPOC, LGBTQ, and women).
-							We believe in providing evidence-based harm-reduction-oriented treatment and support for high-risk behaviors.
-							We believe in our duty to care and see ourselves in the suffering of others so that we may collectively listen, understand, and when possible, offer support toward empowerment and change. -->
-							<!-- cspell:enable -->
-						<!-- </p> -->
+						<br/>
+						<p class="font-serif">
+							At Supportive Minds, we are committed to supporting your mental health, wellness, and personal growth, wherever you may be on your recovery journey. You deserve respect for your autonomy, meaningful human connection, and a safe space to create the positive change you seek in your life.
+						</p>
 					</article>
 				</div>
 			</div>
 
 			<hr class="opacity-80" />
 			
-			<div class="p-4 pl-8 pr-12 flex items-center justify-center space-x-4">
-				<h2 class="h2" data-toc-ignore><span class="text-primary-500">Our Team</span></h2>
-			</div>
-
-			<div class="card variant-soft-primary shadow-xl overflow-hidden block">
-				<div class="p-4 pl-12 pr-12 flex items-center justify-start space-x-4">
+			<!-- <div class="flex items-center justify-center"> -->
+			<h2 class="h2 text-center pt-4" data-toc-ignore><span class="text-primary-500">Our Team</span></h2>
+			<!-- </div> -->
+			<div class="card variant-soft-primary shadow-lg border-soft-primary border-[1px] overflow-hidden block">
+				<div class="p-4 pl-12 pr-12 flex flex-col lg:flex-row items-center justify-start space-x-4">
 					<!-- <div class="placeholder-circle size-20 bg-surface-900 animate-pulse"></div> -->
 					<img class="w-48 h-48 bg-surface-500 rounded-full" src="kath.png" />
 					<section class="p-4">
@@ -286,15 +283,23 @@
 					</section>
 				</div>
 			</div>
-			<div class="card variant-soft-primary shadow-xl overflow-hidden block">
-				<div class="p-4 pl-12 pr-12 flex items-center justify-start space-x-4">
+			<div class="card variant-soft-primary shadow-lg border-soft-primary border-[1px] overflow-hidden block">
+				<div class="p-4 pl-12 pr-12 flex flex-col-reverse lg:flex-row items-center justify-start space-x-4">
 					<section class="p-4 ">
 						<h3 class="h3" data-toc-ignore>Zoi Andalcio</h3>
 						<p class="text-sm">Co-founder</p>
 						<hr class="opacity-80"/>
 						<article class="font-serif pt-4 pb-4">
 							<p>
-								My approach to therapy is client centered, collaborative, empowerment oriented, and evidence based.  I am intentional about providing space for curiosity and not judgement. I am a harm reduction-oriented therapist who has been trained in Integrated Harm Reduction Psychotherapy, Motivational Interviewing, Mentalization Based Therapy, Community Reinforcement and Family Training and various other contextual and person-centered based modalities. My life's work is about curating a safe and welcoming environment for marginalized people; people who have been marginalized by the stigma of mental illness, addictions, various behaviors deemed as high-risk, race, sex and different political realities. I have worked with people who use substances and who suffer from various different comorbidities including medical and psychiatric most of my career. Most importantly, I am here to help my clients feel seen and empowered to move to a place of self-efficacy.
+								My approach to therapy is client centered, collaborative, empowerment oriented, and evidence based.  I am intentional about providing space for curiosity and not judgement. I am a harm reduction-oriented therapist who has been trained in Integrated Harm Reduction Psychotherapy, Motivational Interviewing, Mentalization Based Therapy, Community Reinforcement and Family Training and various other contextual and person-centered based modalities. My life's work is about curating a safe and welcoming environment for marginalized people; people who have been marginalized by the stigma of mental illness, addictions, various behaviors deemed as high-risk, race, sex and different political realities. I am committed to using the field of mental health and psychology to uplift social justice causes and actions to promote liberation for my clients. I have worked with people who use substances and who suffer from various different comorbidities including medical and psychiatric most of my career. Most importantly, I am here to help my clients feel seen and empowered to move to a place of self-efficacy.
+							</p>
+							<br/>
+							<p>
+								When I am not working as a psychotherapist and business owner I enjoy physical activities like running, hiking and strength training. I love watching sports, experiencing art and listening to music, especially live music. I am lucky enough to share my life with my wife and our children.
+							</p>
+							<br/>
+							<p>
+
 							</p>
 						</article>
 					</section>
@@ -353,8 +358,14 @@
 		</Tabs>
 
 <!-- Footer -->
-<footer class="bg-secondary-500 mt-8 p-4 flex items-center justify-end align-center text-right w-full">
-	<img src="pride.png" class="w-12 object-scale-down" alt="Pride Flag"/>
-	<p class="pl-4">Supportive Minds Counseling PLLC.</p>
+<footer class="bg-secondary-500 mt-8 p-4 flex flex-col gap-6 lg:flex-row items-center justify-end align-center text-center w-full">
+	<section class="">
+		<p class="">
+			We are committed to providing an inclusive therapeutic space for all identities and remain steadfast in supporting the dismantlement of cultural and institutional barriers that prevent good mental health for all people. We also recognize that we are on Native ground and we are aware and denounce the erasure of Native history, culture and people that is both historical and ongoing.
+		</p>
+	</section>
+
+	<img src="pride.png" class="w-12 object-scale-down " alt="Pride Flag"/>
+	<p class="w-fit whitespace-nowrap">Supportive Minds Counseling PLLC.</p>
 </footer>
 </div>
