@@ -9,39 +9,44 @@
 	const accordion = $state(['Gender Affirming Care']);
 
 	const tabSet = writable(0);
+	
 </script>
 
 <style>
-.spwidget-button-wrapper{
-	text-align: center
-}
-.spwidget-button{
-	display: inline-block;
-	padding: 12px 24px;
-	color: #fff !important; 
-	background: rgb(192 148 87);
-	border: 0;
-	border-radius: 4px;
-	font-size: 16px;
-	font-weight: 600;
-	text-decoration: none;
-}
-.spwidget-button:hover{
-	background: rgb(70 40 0);
-	color: rgb(192 148 87);
-}
-.spwidget-button:active{
-	color: rgb(192 148 87) !important;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, .15) inset
-}
+	.spwidget-button-wrapper{
+		text-align: center
+	}
+	.spwidget-button{
+		display: inline-block;
+		padding: 12px 24px;
+		color: #fff !important; 
+		background: rgb(192 148 87);
+		border: 0;
+		border-radius: 4px;
+		font-size: 16px;
+		font-weight: 600;
+		text-decoration: none;
+	}
+	.spwidget-button:hover{
+		background: rgb(70 40 0);
+		color: rgb(192 148 87);
+	}
+	.spwidget-button:active{
+		color: rgb(192 148 87) !important;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, .15) inset
+	}
 </style>
 
 <div class="grid grid-rows-[auto_1fr_auto]">
-	<header class="bg-primary-500 p-4 flex flex-row justify-center items-center gap-4">
-		<div class="flex flex-row justify-center items-center gap-4 max-w-screen-md">
+	<header class="bg-primary-500 flex flex-col md:flex-row justify-center md:items-end gap-4 lg:h-[10em] pb-4 lg:pr-4">
+		<div class="lg:absolute flex flex-row justify-center items-center gap-4 max-w-screen-md">
 			<img src="Secondary Logo_White.svg" class="w-96 object-scale-down" alt="Supportive Minds PLLC."/>
 		</div>
+		<div class="lg:ml-auto">
+			<div class="spwidget-button-wrapper"><a href="https://supportiveminds.clientsecure.me" class="spwidget-button" data-spwidget-scope-id="2f8b8601-b2df-4ba7-bc74-8cb0768ed708" data-spwidget-scope-uri="supportiveminds" data-spwidget-application-id="7c72cb9f9a9b913654bb89d6c7b4e71a77911b30192051da35384b4d0c6d505b" data-spwidget-scope-global data-spwidget-autobind>Request Appointment</a></div>
+		</div>
 	</header>
+	
 	{#snippet services()}
 	<div class="container mx-auto grid grid-cols-1 xl:grid-cols-[100px_minmax(0px,_1fr)_100px]">
 		<aside class="sticky top-0 col-span-1 hidden min-h-[50vh] p-4 xl:block"></aside>
@@ -61,9 +66,10 @@
 				</section>
 				</div>
 			</div> -->
-			<h4 class="h4 text-center">
+			<img class="w-full h-auto bg-surface-500 rounded-3xl" src="kath-n-zoi-2.jpg" />
+			<h3 class="p-8 h3 text-center">
 				<span class="text-primary-500">Our Services</span>
-			</h4>
+			</h3>
 			<br/>
 			<hr class="hr"/>
 			<Accordion {accordion} multiple>
@@ -208,13 +214,15 @@
 	{/snippet}
 
 	{#snippet about()}
-	<div class="container mx-auto grid grid-cols-1 xl:grid-cols-[100px_minmax(0px,_1fr)_100px]">
+	<div class="container mx-auto grid grid-cols-1 xl:grid-cols-[50px_minmax(0px,_1fr)_50px]">
 		<aside class="sticky top-0 col-span-1 hidden min-h-[50vh] p-4 xl:block"></aside>
 		<main class="col-span-1 space-y-2 p-4 min-h-[50vh]">
-			<div class="container mx-auto grid md:grid-cols-7 h-3/8 gap-4 items-center">
-				<!-- card-hover -->
-				<div class="card col-span-2 variant-soft-primary h-full overflow-hidden">
-					<section class="p-4 h-full flex flex-col items-center justify-center text-center">
+			<div class="container mx-auto h-3/8 gap-4 flex flex-col lg:flex-row items-center justify-start">
+				<!-- <div class="card variant-soft-primary h-full overflow-hidden"> -->
+					<img class="w-48 h-auto bg-surface-500 rounded-full" src="kath-n-zoi.jpg" />
+					<!-- <section class="p-4 h-full flex flex-col items-center justify-center text-center"> -->
+					<!-- </section> -->
+					<!-- <section class="p-4 h-full flex flex-col items-center justify-center text-center">
 						<article class="p-2">
 							<p class="text-md">
 								<a class="text-secondary-500" href="https://maps.app.goo.gl/1mv9WNXgyJUFg2w7A">
@@ -224,16 +232,12 @@
 								</a>
 							</p>
 						</article>
-						<!-- <button type="button" class="btn btn-2xl pt-5 pb-5 w-full h-1/4 bg-secondary-500 text-2xl drop-shadow-xl">Book Consultation</button> -->
 
-						<!-- Start SimplePractice Appointment-Request Widget Embed Code -->
 						<div class="spwidget-button-wrapper"><a href="https://supportiveminds.clientsecure.me" class="spwidget-button" data-spwidget-scope-id="2f8b8601-b2df-4ba7-bc74-8cb0768ed708" data-spwidget-scope-uri="supportiveminds" data-spwidget-application-id="7c72cb9f9a9b913654bb89d6c7b4e71a77911b30192051da35384b4d0c6d505b" data-spwidget-scope-global data-spwidget-autobind>Request Appointment</a></div>
-						<script src="https://widget-cdn.simplepractice.com/assets/integration-1.0.js"></script>
-						<!-- End SimplePractice Appointment-Request Widget Embed Code -->
-					</section>
-				</div>
-				<!-- card-hover -->
-				<div class="col-span-5 col-start-3 card variant-soft-primary overflow-hidden">
+						<script src="https://widget-cdn.simplepractice.com/assets/integration-1.0.js"></script> -->
+					<!-- </section> -->
+				<!-- </div> -->
+				<!-- <div class="card variant-soft-primary overflow-hidden"> -->
 					<article class="p-4">
 						<h5 class="h5" data-toc-ignore> Who We Are </h5>
 						<p class="font-serif">
@@ -253,7 +257,7 @@
 							At Supportive Minds, we are committed to supporting your mental health, wellness, and personal growth, wherever you may be on your recovery journey. You deserve respect for your autonomy, meaningful human connection, and a safe space to create the positive change you seek in your life.
 						</p>
 					</article>
-				</div>
+				<!-- </div> -->
 			</div>
 
 			<hr class="opacity-80" />
@@ -264,7 +268,7 @@
 			<div class="card variant-soft-primary shadow-lg border-soft-primary border-[1px] overflow-hidden block">
 				<div class="p-4 pl-12 pr-12 flex flex-col lg:flex-row items-center justify-start space-x-4">
 					<!-- <div class="placeholder-circle size-20 bg-surface-900 animate-pulse"></div> -->
-					<img class="w-48 h-48 bg-surface-500 rounded-full" src="kath.png" />
+					<img class="w-48 h-auto bg-surface-500 rounded-full" src="kath.jpg" />
 					<section class="p-4">
 						<h3 class="h3" data-toc-ignore>Katherine Clemens</h3>
 						<p class="text-sm">Co-founder</p>
@@ -291,7 +295,11 @@
 						<hr class="opacity-80"/>
 						<article class="font-serif pt-4 pb-4">
 							<p>
-								My approach to therapy is client centered, collaborative, empowerment oriented, and evidence based.  I am intentional about providing space for curiosity and not judgement. I am a harm reduction-oriented therapist who has been trained in Integrated Harm Reduction Psychotherapy, Motivational Interviewing, Mentalization Based Therapy, Community Reinforcement and Family Training and various other contextual and person-centered based modalities. My life's work is about curating a safe and welcoming environment for marginalized people; people who have been marginalized by the stigma of mental illness, addictions, various behaviors deemed as high-risk, race, sex and different political realities. I am committed to using the field of mental health and psychology to uplift social justice causes and actions to promote liberation for my clients. I have worked with people who use substances and who suffer from various different comorbidities including medical and psychiatric most of my career. Most importantly, I am here to help my clients feel seen and empowered to move to a place of self-efficacy.
+								My approach to therapy is client centered, collaborative, empowerment oriented, and evidence based.  I am intentional about providing space for curiosity and not judgement. I am a harm reduction-oriented therapist who has been trained in Integrated Harm Reduction Psychotherapy, Motivational Interviewing, Mentalization Based Therapy, Community Reinforcement and Family Training and various other contextual and person-centered based modalities. 
+							</p>
+							<br/>
+							<p>	
+								My life's work is about curating a safe and welcoming environment for marginalized people; people who have been marginalized by the stigma of mental illness, addictions, various behaviors deemed as high-risk, race, sex and different political realities. I am committed to using the field of mental health and psychology to uplift social justice causes and actions to promote liberation for my clients. I have worked with people who use substances and who suffer from various different comorbidities including medical and psychiatric most of my career. Most importantly, I am here to help my clients feel seen and empowered to move to a place of self-efficacy.
 							</p>
 							<br/>
 							<p>
@@ -303,7 +311,7 @@
 							</p>
 						</article>
 					</section>
-					<img class="w-48 h-48 bg-surface-500 rounded-full" src="zoi.jpg" />
+					<img class="w-48 h-auto bg-surface-500 rounded-full" src="zoi.jpg" />
 				</div>
 			</div>
 			<!-- </div> -->
@@ -361,7 +369,7 @@
 <footer class="bg-secondary-500 mt-8 p-4 flex flex-col gap-6 lg:flex-row items-center justify-end align-center text-center w-full">
 	<section class="">
 		<p class="">
-			We are committed to providing an inclusive therapeutic space for all identities and remain steadfast in supporting the dismantlement of cultural and institutional barriers that prevent good mental health for all people. We also recognize that we are on Native ground and we are aware and denounce the erasure of Native history, culture and people that is both historical and ongoing.
+			We are committed to providing an inclusive therapeutic space for all identities and remain steadfast in supporting the dismantlement of cultural and institutional barriers that prevent good mental health for all people. We also want to acknowledge that we are on Native land. We denounce the erasure of Native history, culture and people that is both historical and ongoing.
 		</p>
 	</section>
 
