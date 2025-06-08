@@ -7,9 +7,6 @@
 
 	let group = $state('about');
 	const accordion = $state(['Gender Affirming Care']);
-
-	const tabSet = writable(0);
-	
 </script>
 
 <style>
@@ -38,12 +35,15 @@
 </style>
 
 <div class="grid grid-rows-[auto_1fr_auto]">
-	<header class="bg-primary-500 flex flex-col md:flex-row justify-center md:items-end gap-4 lg:h-[10em] pb-4 lg:pr-4">
+	<header class="bg-primary-500 flex flex-col md:flex-row justify-center md:items-end gap-4 lg:h-[11em] pb-4 lg:pr-4">
 		<div class="lg:absolute flex flex-row justify-center items-center gap-4 max-w-screen-md">
-			<img src="Secondary Logo_White.svg" class="w-96 object-scale-down" alt="Supportive Minds PLLC."/>
+			<div class="flex flex-col justify-center items-center gap-0">
+				<img src="Secondary Logo_White.svg" class="w-96 object-scale-down" alt="Supportive Minds PLLC. Logo"/>
+				<p class="text-center p-0 text-xl"><span class="text-white">Supporting Change, Reducing Harm</span></p>
+			</div>
 		</div>
 		<div class="lg:ml-auto">
-			<div class="spwidget-button-wrapper"><a href="https://supportiveminds.clientsecure.me" class="spwidget-button" data-spwidget-scope-id="2f8b8601-b2df-4ba7-bc74-8cb0768ed708" data-spwidget-scope-uri="supportiveminds" data-spwidget-application-id="7c72cb9f9a9b913654bb89d6c7b4e71a77911b30192051da35384b4d0c6d505b" data-spwidget-scope-global data-spwidget-autobind>Request Appointment</a></div>
+			<div class="spwidget-button-wrapper"><a href="https://supportiveminds.clientsecure.me" class="spwidget-button" data-spwidget-scope-id="2f8b8601-b2df-4ba7-bc74-8cb0768ed708" data-spwidget-scope-uri="supportiveminds" data-spwidget-application-id="7c72cb9f9a9b913654bb89d6c7b4e71a77911b30192051da35384b4d0c6d505b" data-spwidget-scope-global data-spwidget-autobind>Request Free Consultation</a></div>
 		</div>
 	</header>
 	
@@ -66,9 +66,9 @@
 				</section>
 				</div>
 			</div> -->
-			<img class="w-full h-auto bg-surface-500 rounded-3xl" src="kath-n-zoi-2.jpg" />
+			<img alt="Katherine Clemens and Zoi Andalcio" class="w-full h-auto bg-surface-500 rounded-3xl" src="kath-n-zoi-2.jpg" />
 			<h3 class="p-8 h3 text-center">
-				<span class="text-primary-500">Our Services</span>
+				<span class="text-primary-500">Our Offerings</span>
 			</h3>
 			<br/>
 			<hr class="hr"/>
@@ -140,6 +140,17 @@
 
 				<Accordion.Item controlHover="hover:preset-tonal-secondary" value="Training/Consultation">
 					<!-- {#snippet lead()}X{/snippet} -->
+					{#snippet control()}Community Plus{/snippet}
+					{#snippet panel()}
+						<p class="font-serif">
+							For those in need of care beyond just psychotherapy, we offer a combined care team that includes  a combination of case management, home management, community outreach and psychotherapy provided by both of our clinicians for around 5 service hours per week. This service is billed at a set monthly rate and includes both in office and in community support. Thorough consultation and case review are included to best support those who may be in need of more than a therapist can offer individually. 
+						</p>
+					{/snippet}
+				</Accordion.Item>
+				<hr class="hr" />
+
+				<Accordion.Item controlHover="hover:preset-tonal-secondary" value="Training/Consultation">
+					<!-- {#snippet lead()}X{/snippet} -->
 					{#snippet control()}Training/Consultation{/snippet}
 					{#snippet panel()}
 						<p class="font-serif">
@@ -149,6 +160,29 @@
 				</Accordion.Item>
 				<hr class="hr" />
 			</Accordion>
+			<h3 class="p-8 h3 text-center">
+				<span class="text-primary-500">Fees</span>
+			</h3>
+			<!-- <br/> -->
+			<div class="card variant-soft-primary shadow-lg border-soft-primary border-[1px] p-12 overflow-hidden block">
+				<!-- <div class="p-4 pl-12 pr-12 flex flex-col lg:flex-row items-center justify-start space-x-4"> -->
+					<p>
+						All of our services are considered out-of-network with insurance carriers, meaning that clients pay out of pocket for all services rendered because some of the services we provide are outside of traditional medical model practice and are non-reimbursable. The out-of-network structure allows us the flexibility to provide more intensive, individualized, and unique care. We will provide a monthly superbill that can be used to submit claims to your insurance carrier for partial reimbursement for those who have out-of-network benefits. The reimbursement rate for each individual plan differs so we encourage you to reach out to your insurance carrier beforehand to see what the reimbursement rate will be. We are happy to help with the process and can ensure that we will provide you with accurate, timely superbills and transparency around costs up front. 
+					</p>
+					<br/>
+					<p>
+						All individual psychotherapy and case management sessions are billed at $200 per 50min session. For meetings that occur in the community, we bill travel time at 15min prorated increments of $200. Services beyond psychotherapy and case management are billed on an individual basis depending on hours of service and the type of care needed. Individual and agency training costs are calculated based on the size of attendance and the training requested. Please reach out to us directly at <a href="mailto:inquiries@supportivemindscounseling.com">inquiries@supportivemindscounseling.com</a> to review the exact costs for the additional services we offer. 
+					</p>
+					<br/>
+					<p>
+						We offer a limited number of sliding scale spaces for individuals who otherwise would not be able to afford our fees. Priority for these spaces are given to those who hold a <b>gender diverse</b> or <b>BIPOC</b> identity. 
+					</p>
+					<p>
+						Payment is accepted via check, credit card, or hsa/fsa. 
+					</p>
+					<br/>
+					<!-- </div> -->
+			</div>
 			</div>
 		</main>
 		<aside class="sticky top-0 col-span-1 hidden min-h-[50vh] p-4 xl:block"></aside>
@@ -167,7 +201,7 @@
 						<h3 class="h3">
 							<span class="text-primary-500">Contact Us</span>
 						</h3>
-						<p class="text-md">
+						<p class="text-md whitespace-nowrap text-nowrap">
 							Email us: 
 							<a class="text-secondary-500" href="mailto:kclemens@supportivemindscounseling.com">
 								inquiries@supportivemindscounseling.com
@@ -175,7 +209,16 @@
 							Call us:
 							<a class="text-secondary-500" href="mailto:kclemens@supportivemindscounseling.com">
 								(617) 858-5996
+							</a><br/>
+							<span class="inline-flex gap-2">
+							Follow us on social media:
+							<a class="text-secondary-500 text-center" href="https://bsky.app/profile/supportiveminds.bsky.social">
+								<svg class="w-6 fill-secondary-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M111.8 62.2C170.2 105.9 233 194.7 256 242.4c23-47.6 85.8-136.4 144.2-180.2c42.1-31.6 110.3-56 110.3 21.8c0 15.5-8.9 130.5-14.1 149.2C478.2 298 412 314.6 353.1 304.5c102.9 17.5 129.1 75.5 72.5 133.5c-107.4 110.2-154.3-27.6-166.3-62.9l0 0c-1.7-4.9-2.6-7.8-3.3-7.8s-1.6 3-3.3 7.8l0 0c-12 35.3-59 173.1-166.3 62.9c-56.5-58-30.4-116 72.5-133.5C100 314.6 33.8 298 15.7 233.1C10.4 214.4 1.5 99.4 1.5 83.9c0-77.8 68.2-53.4 110.3-21.8z"/></svg>
 							</a>
+							<a class="text-secondary-500 text-center" href="https://www.linkedin.com/company/106497222/admin/dashboard/">
+								<svg class="w-6 fill-secondary-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+							</a>
+							</span>
 							<!-- To email Zoi Andalcio:
 							<a class="text-secondary-500" href="mailto:kclemens@supportivemindscounseling.com">
 								zandalcio@supportivemindscounseling.com
@@ -195,7 +238,7 @@
 						<br/>
 						<!-- </h5> -->
 						<!-- Start SimplePractice Appointment-Request Widget Embed Code -->
-						<div class="spwidget-button-wrapper"><a href="https://supportiveminds.clientsecure.me" class="spwidget-button" data-spwidget-scope-id="2f8b8601-b2df-4ba7-bc74-8cb0768ed708" data-spwidget-scope-uri="supportiveminds" data-spwidget-application-id="7c72cb9f9a9b913654bb89d6c7b4e71a77911b30192051da35384b4d0c6d505b" data-spwidget-scope-global data-spwidget-autobind>Request Appointment</a></div>
+						<div class="spwidget-button-wrapper"><a href="https://supportiveminds.clientsecure.me" class="spwidget-button" data-spwidget-scope-id="2f8b8601-b2df-4ba7-bc74-8cb0768ed708" data-spwidget-scope-uri="supportiveminds" data-spwidget-application-id="7c72cb9f9a9b913654bb89d6c7b4e71a77911b30192051da35384b4d0c6d505b" data-spwidget-scope-global data-spwidget-autobind>Request Free Consultation</a></div>
 						<script src="https://widget-cdn.simplepractice.com/assets/integration-1.0.js"></script>
 						<!-- End SimplePractice Appointment-Request Widget Embed Code -->
 						<br/>
@@ -203,7 +246,7 @@
 						<div class="p-4 pl-8 pr-12 flex items-center justify-center space-x-4">
 							<h3 class="h3" data-toc-ignore><span class="text-primary-500">Where To Find Us</span></h3>
 						</div>
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2946.2200945297927!2d-71.1293754236272!3d42.40175807118904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3771e01397e9f%3A0xc0db7d4b9e561c5e!2s206%20Holland%20St%2C%20Somerville%2C%20MA%2002144!5e0!3m2!1sen!2sus!4v1739659982357!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						<iframe title="Office location on Google Maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2946.2200945297927!2d-71.1293754236272!3d42.40175807118904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3771e01397e9f%3A0xc0db7d4b9e561c5e!2s206%20Holland%20St%2C%20Somerville%2C%20MA%2002144!5e0!3m2!1sen!2sus!4v1739659982357!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 					</article>
 					<!-- <button type="button" class="btn btn-2xl pt-5 pb-5 w-full h-1/4 bg-secondary-500 text-2xl drop-shadow-xl">Book Consultation</button> -->
 				</section>
@@ -219,7 +262,7 @@
 		<main class="col-span-1 space-y-2 p-4 min-h-[50vh]">
 			<div class="container mx-auto h-3/8 gap-4 flex flex-col lg:flex-row items-center justify-start">
 				<!-- <div class="card variant-soft-primary h-full overflow-hidden"> -->
-					<img class="w-48 h-auto bg-surface-500 rounded-full" src="kath-n-zoi.jpg" />
+					<img alt="Katherine Clemes and Zoi Andalcio" class="w-48 h-auto bg-surface-500 rounded-full" src="kath-n-zoi.jpg" />
 					<!-- <section class="p-4 h-full flex flex-col items-center justify-center text-center"> -->
 					<!-- </section> -->
 					<!-- <section class="p-4 h-full flex flex-col items-center justify-center text-center">
@@ -256,6 +299,10 @@
 						<p class="font-serif">
 							At Supportive Minds, we are committed to supporting your mental health, wellness, and personal growth, wherever you may be on your recovery journey. You deserve respect for your autonomy, meaningful human connection, and a safe space to create the positive change you seek in your life.
 						</p>
+						<br/>
+						<p>
+							To us, practicing harm reduction goes beyond providing tools for safer consumption. It is about resisting practices that take away bodily autonomy and dignity of risk.
+						</p>
 					</article>
 				<!-- </div> -->
 			</div>
@@ -268,7 +315,7 @@
 			<div class="card variant-soft-primary shadow-lg border-soft-primary border-[1px] overflow-hidden block">
 				<div class="p-4 pl-12 pr-12 flex flex-col lg:flex-row items-center justify-start space-x-4">
 					<!-- <div class="placeholder-circle size-20 bg-surface-900 animate-pulse"></div> -->
-					<img class="w-48 h-auto bg-surface-500 rounded-full" src="kath.jpg" />
+					<img alt="Katherine Clemens" class="w-48 h-auto bg-surface-500 rounded-full" src="kath.jpg" />
 					<section class="p-4">
 						<h3 class="h3" data-toc-ignore>Katherine Clemens</h3>
 						<p class="text-sm">Co-founder</p>
@@ -295,15 +342,15 @@
 						<hr class="opacity-80"/>
 						<article class="font-serif pt-4 pb-4">
 							<p>
-								My approach to therapy is client centered, collaborative, empowerment oriented, and evidence based.  I am intentional about providing space for curiosity and not judgement. I am a harm reduction-oriented therapist who has been trained in Integrated Harm Reduction Psychotherapy, Motivational Interviewing, Mentalization Based Therapy, Community Reinforcement and Family Training and various other contextual and person-centered based modalities. 
+								My approach to therapy is person-centered, collaborative, empowerment-focused, and rooted in evidence-based practices. I strive to create a therapeutic space grounded in curiosity rather than judgment. As a harm reduction-oriented therapist, I draw from extensive training in Integrated Harm Reduction Psychotherapy, Motivational Interviewing, Mentalization-Based Therapy, Community Reinforcement and Family Training (CRAFT), and other contextual and person-centered modalities.
 							</p>
 							<br/>
 							<p>	
-								My life's work is about curating a safe and welcoming environment for marginalized people; people who have been marginalized by the stigma of mental illness, addictions, various behaviors deemed as high-risk, race, sex and different political realities. I am committed to using the field of mental health and psychology to uplift social justice causes and actions to promote liberation for my clients. I have worked with people who use substances and who suffer from various different comorbidities including medical and psychiatric most of my career. Most importantly, I am here to help my clients feel seen and empowered to move to a place of self-efficacy.
+								My work is centered on creating safe, inclusive, and affirming spaces—especially for individuals marginalized by the stigma surrounding mental illness, substance use, high-risk behaviors, race, gender, and differing political realities. I believe in using the tools of mental health and psychology to support social justice and collective liberation. I work closely with people who use substances and navigate complex co-occurring medical and psychiatric challenges. At the core of my practice is a commitment to helping people feel truly seen, and to supporting their journey toward self-efficacy, healing, and empowerment.
 							</p>
 							<br/>
 							<p>
-								When I am not working as a psychotherapist and business owner I enjoy physical activities like running, hiking and strength training. I love watching sports, experiencing art and listening to music, especially live music. I am lucky enough to share my life with my wife and our children.
+								To sustain my work, I prioritize two things; my health and my family.  I enjoy staying active through engaging in physical exercise and different wellness practices. I'm grateful to share my life with my wife and our children.
 							</p>
 							<br/>
 							<p>
@@ -311,7 +358,7 @@
 							</p>
 						</article>
 					</section>
-					<img class="w-48 h-auto bg-surface-500 rounded-full" src="zoi.jpg" />
+					<img alt="Zoi Andalcio" class="w-48 h-auto bg-surface-500 rounded-full" src="zoi.jpg" />
 				</div>
 			</div>
 			<!-- </div> -->
@@ -343,10 +390,10 @@
 		<Tabs bind:value={group} listClasses="bg-surface-500 justify-center items-center" fluid>
 			{#snippet list()}
 			<div class="container flex flex-row justify-center items-center max-w-screen-md">
-				<Tabs.Control value="about" stateActive="border-primary-500 border-b-[3px]" labelClasses="hover:preset-tonal-secondary">About</Tabs.Control>
-				<Tabs.Control value="services" stateActive="border-primary-500 border-b-[3px]" labelClasses="hover:preset-tonal-secondary">Services</Tabs.Control>
-				<Tabs.Control value="contact" stateActive="border-primary-500 border-b-[3px]" labelClasses="hover:preset-tonal-secondary">Contact</Tabs.Control>
-				<a href="https://supportiveminds.clientsecure.me/sign-in"><Tabs.Control value="clients" disabled="true" labelClasses="hover:preset-tonal-secondary">{#snippet lead()}<ExternalLink size={22}/>{/snippet}Existing Client Portal</Tabs.Control></a>
+				<Tabs.Control value="about" classes="pb-1 pt-1" stateActive="border-primary-500 border-b-[3px]" labelClasses="hover:preset-tonal-secondary">About</Tabs.Control>
+				<Tabs.Control value="services" classes="pb-1 pt-1" stateActive="border-primary-500 border-b-[3px]" labelClasses="hover:preset-tonal-secondary">Offerings & Fees</Tabs.Control>
+				<Tabs.Control value="contact"classes="pb-1 pt-1"  stateActive="border-primary-500 border-b-[3px]" labelClasses="hover:preset-tonal-secondary">Contact</Tabs.Control>
+				<a href="https://supportiveminds.clientsecure.me/sign-in"><Tabs.Control value="clients" disabled="true" classes="pb-1 pt-1" labelClasses="hover:preset-tonal-secondary">{#snippet lead()}<ExternalLink size={22}/>{/snippet}Existing Client Portal</Tabs.Control></a>
 			</div>
 			{/snippet}
 			{#snippet content()}
@@ -368,12 +415,16 @@
 <!-- Footer -->
 <footer class="bg-secondary-500 mt-8 p-4 flex flex-col gap-6 lg:flex-row items-center justify-end align-center text-center w-full">
 	<section class="">
-		<p class="">
+		<p class="text-xs">
 			We are committed to providing an inclusive therapeutic space for all identities and remain steadfast in supporting the dismantlement of cultural and institutional barriers that prevent good mental health for all people. We also want to acknowledge that we are on Native land. We denounce the erasure of Native history, culture and people that is both historical and ongoing.
+			We acknowledge that our therapy practice is located on Naumkeag, Pawtucket and Massachusett native land.
 		</p>
 	</section>
 
-	<img src="pride.png" class="w-12 object-scale-down " alt="Pride Flag"/>
+	<a href="https://www.inclusivetherapists.com/massachusetts/somerville/zoi-andalcio?from=badge" title="Find me on Inclusive Therapists" target="_blank" class="w-24 p-0 m-0 mt-0">
+		<img alt="Inclusive Therapists" src="https://www.inclusivetherapists.com/images/inclusive_therapists_members_badge.png" class="w-12 object-scale-down p-0"/>
+	</a>
+	<img src="pride.png" class="w-12 object-scale-down" alt="Pride Flag"/>
 	<p class="w-fit whitespace-nowrap">Supportive Minds Counseling PLLC.</p>
 </footer>
 </div>
