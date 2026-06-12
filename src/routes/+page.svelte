@@ -260,7 +260,9 @@
 	<div class="container mx-auto grid grid-cols-1 xl:grid-cols-[50px_minmax(0px,_1fr)_50px]">
 		<aside class="sticky top-0 col-span-1 hidden min-h-[50vh] p-4 xl:block"></aside>
 		<main class="col-span-1 space-y-2 p-4 min-h-[50vh]">
-			<div class="container mx-auto h-3/8 gap-4 flex flex-col lg:flex-row items-center justify-start">
+
+			<div class="card variant-soft-primary shadow-lg border-soft-primary border-[1px] overflow-hidden block">
+			<div class="p-4 pl-12 pr-12 container mx-auto h-3/8 gap-4 flex flex-col lg:flex-row items-center justify-start">
 				<!-- <div class="card variant-soft-primary h-full overflow-hidden"> -->
 					<img alt="Katherine Clemes and Zoi Andalcio" class="w-48 h-auto bg-surface-500 rounded-full" src="kath-n-zoi.jpg" />
 					<!-- <section class="p-4 h-full flex flex-col items-center justify-center text-center"> -->
@@ -282,7 +284,7 @@
 				<!-- </div> -->
 				<!-- <div class="card variant-soft-primary overflow-hidden"> -->
 					<article class="p-4">
-						<h5 class="h5" data-toc-ignore> Who We Are </h5>
+						<h5 class="h3" data-toc-ignore> Who We Are </h5>
 						<p class="font-serif">
 							<!-- cspell:disable -->
 							Supportive Minds is a specialty outpatient mental health and addiction practice dedicated to inclusivity, community, and harm reduction. We provide care to adults, adolescents, and traditionally underserved or vulnerable populations, utilizing a variety of evidence-based clinical models of care. Our services are available in-office, in the community, or virtually to best meet the needs of our clients. As a minority-owned business, we are proud to serve and uplift diverse communities.
@@ -304,7 +306,7 @@
 							To us, practicing harm reduction goes beyond providing tools for safer consumption. It is about resisting practices that take away bodily autonomy and dignity of risk.
 						</p>
 					</article>
-				<!-- </div> -->
+				</div>
 			</div>
 
 			<hr class="opacity-80" />
@@ -367,6 +369,50 @@
 	</div>
 	{/snippet}
 
+	{#snippet groups()}
+	<div class="container mx-auto grid grid-cols-1 xl:grid-cols-[50px_minmax(0px,_1fr)_50px]">
+		<aside class="sticky top-0 col-span-1 hidden min-h-[50vh] p-4 xl:block"></aside>
+		<main class="col-span-1 space-y-2 p-4 min-h-[50vh]">
+			
+			<!-- <div class="flex items-center justify-center"> -->
+			<h2 class="h2 text-center pt-4" data-toc-ignore><span class="text-primary-500">Group Offerings</span></h2>
+			<!-- </div> -->
+			<div class="card variant-soft-primary shadow-lg border-soft-primary border-[1px] overflow-hidden block">
+				<div class="p-4 pl-12 pr-12 flex flex-col lg:flex-row items-center justify-start space-x-4">
+					<!-- <div class="placeholder-circle size-20 bg-surface-900 animate-pulse"></div> -->
+					<!-- <img alt="Katherine Clemens" class="w-48 h-auto bg-surface-500 rounded-full" src="kath.jpg" /> -->
+					<section class="p-4">
+						<h3 class="h3" data-toc-ignore>#1&ensp;Parenting Through Recovery</h3>
+						<!-- <p class="text-sm">Co-founder</p> -->
+						<hr class="opacity-80"/>
+						<article class="font-serif pt-4 pb-4">
+							<p>
+								Zoi Andalcio, LMHC is offering a supportive therapy group for parents navigating addiction, trauma, stress, and healing. This group occurs in-person in our office, has a 90min run-time, will go for 9 weeks and is $25/group. 
+								<br/><br/>
+								The group will explore themes of parenting while navigating recovery, emotion regulation and improve self-awareness, trauma and relational patterns, shame, self-criticism, and overwhelm, and more sustainable and compassionate ways of relating with self and others. 
+								<br/><br/>
+							</p>
+							This group is a good fit for parents who are at any stage of recovery and want a compassionate, nonjudgmental space to reflect, connect, and grow.
+							This group holds the philosophy that:
+							<ul style="list-style-type: disc; padding-left: 1em;">
+								<li>Recovery is not linear</li>
+								<li>Parenting is deeply impacted by lived experience</li>
+								<li>There is no “perfect” parent</li>
+								<li>Shame and self-criticism can make connection harder</li>
+								<li>Healing happens through understanding, support, and practice</li>
+							</ul>
+							<br/><br/>
+							Please reach out to <a href="mailto:inquiries@supportivemindscounseling.com">inquiries@supportivemindscounseling.com</a> for more information.
+						</article>
+					</section>
+				</div>
+			</div>
+			<!-- </div> -->
+		</main>
+		<aside class="sticky top-0 col-span-1 hidden min-h-[50vh] p-4 xl:block"></aside>
+	</div>
+	{/snippet}
+
 	{#snippet tabcontent()}
 	<div class="container mx-auto grid grid-cols-1 xl:grid-cols-[100px_minmax(0px,_1fr)_100px]">
 		<aside class="sticky top-0 col-span-1 hidden h-screen p-4 xl:block"></aside>
@@ -392,6 +438,7 @@
 			<div class="container flex flex-row justify-center items-center max-w-screen-md">
 				<Tabs.Control value="about" classes="pb-1 pt-1" stateActive="border-primary-500 border-b-[3px]" labelClasses="hover:preset-tonal-secondary">About</Tabs.Control>
 				<Tabs.Control value="services" classes="pb-1 pt-1" stateActive="border-primary-500 border-b-[3px]" labelClasses="hover:preset-tonal-secondary">Offerings & Fees</Tabs.Control>
+				<Tabs.Control value="groups" classes="pb-1 pt-1" stateActive="border-primary-500 border-b-[3px]" labelClasses="hover:preset-tonal-secondary">Groups</Tabs.Control>
 				<Tabs.Control value="contact"classes="pb-1 pt-1"  stateActive="border-primary-500 border-b-[3px]" labelClasses="hover:preset-tonal-secondary">Contact</Tabs.Control>
 				<a href="https://supportiveminds.clientsecure.me/sign-in"><Tabs.Control value="clients" disabled="true" classes="pb-1 pt-1" labelClasses="hover:preset-tonal-secondary">{#snippet lead()}<ExternalLink size={22}/>{/snippet}Existing Client Portal</Tabs.Control></a>
 			</div>
@@ -402,6 +449,9 @@
 				</Tabs.Panel>
 				<Tabs.Panel value="services">
 					{@render services()}
+				</Tabs.Panel>
+				<Tabs.Panel value="groups">
+					{@render groups()}
 				</Tabs.Panel>
 				<Tabs.Panel value="contact">
 					{@render contact()}
