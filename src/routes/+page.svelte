@@ -324,13 +324,15 @@
 						<hr class="opacity-80"/>
 						<article class="font-serif pt-4 pb-4">
 							<p>
-								I am passionate about working with individuals from all walks of life, with a particular focus on supporting teens and young adults who identify on the LGBTQ+ spectrum, as well as anyone feeling uncertain about their identity and purpose regardless of age, sexuality, and gender.
+								I enjoy working with teens and adults who identify on the LGBTQIA+ spectrum, as well as anyone feeling stuck or uncertain about their identity and purpose regardless of age, sexuality, and gender. My practice is rooted in a relational, community-oriented approach where I believe that connection and understanding are key drivers of healing. While I bring my own experience and perspective to our work, I approach therapy with an open heart and a commitment to creating a judgment free space.
 								<br/><br/>
-								My practice is rooted in a relational, community-oriented approach, where I believe that connection and understanding are key drivers of healing and recovery. I bring experience in addressing a broad range of mental health concerns, including depression, anxiety, psychosis, mood disorders, and addiction/addictive processes.
+								I integrate an interpersonal and relational framework, focusing on identity, context, and values. My work combines Integrative Harm Reduction Psychotherapy (IHRP), Mentalization-Based Therapy (MBT), Acceptance and Commitment Therapy (ACT), Accelerated Experiential Dynamic Psychotherapy (AEDP)  and Motivational Interviewing (MI). In addition to the modalities that I am trained in, I maintain focus on the influence of the systems surrounding us all and their impact on mental health and individual experiences of self.
 								<br/><br/>
-								I integrate an interpersonal and relational framework, focusing on identity, context, and values to meet the unique needs of each client. I do not subscribe to a one-size-fits-all model of healing; rather, I believe that each person’s journey is distinct. My work emphasizes Harm Reduction, Mentalization-Based Therapy, CBT, and Motivational Interviewing
+ 								Issues that I commonly treat include disconnection, identity confusion, self-esteem, anxiety, attachment wounds, trauma, self-harm, problematic sexual behavior, depression, and addiction (chemical and process). 
 								<br/><br/>
-								In my free time I enjoy heavy music, boxing, oddities, and being outdoors with my dogs. 
+								People I've worked with have described me as thoughtful, patient, and open-minded. I have historically worked well with people who have had negative experiences in therapy in the past. I believe that everyone deserves to heal, no matter where you've been and what labels have been placed on you in the past. 
+								<br/><br/>
+								In my free time I enjoy boxing, making and listening to heavy music, and spending time outdoors with my wife and our dogs. 
 							</p>
 						</article>
 					</section>
@@ -401,6 +403,24 @@
 								<li>Shame and self-criticism can make connection harder</li>
 								<li>Healing happens through understanding, support, and practice</li>
 							</ul>
+							<br/><br/>
+							Please reach out to <a href="mailto:inquiries@supportivemindscounseling.com">inquiries@supportivemindscounseling.com</a> for more information.
+						</article>
+					</section>
+				</div>
+			</div>
+			<div class="card variant-soft-primary shadow-lg border-soft-primary border-[1px] overflow-hidden block">
+				<div class="p-4 pl-12 pr-12 flex flex-col lg:flex-row items-center justify-start space-x-4">
+					<!-- <div class="placeholder-circle size-20 bg-surface-900 animate-pulse"></div> -->
+					<!-- <img alt="Katherine Clemens" class="w-48 h-auto bg-surface-500 rounded-full" src="kath.jpg" /> -->
+					<section class="p-4">
+						<h3 class="h3" data-toc-ignore>#2&ensp;Pornography Use Support Group</h3>
+						<!-- <p class="text-sm">Co-founder</p> -->
+						<hr class="opacity-80"/>
+						<article class="font-serif pt-4 pb-4">
+							<p>
+								Katherine Clemens, LICSW is offering a bi-weekly support group for individuals struggling with pornography use that is creating problems or feels out of control. This group will combine peer support, skill building, psychoeducation, and space for processing. It is open to all genders and sexual identities. 
+							</p>
 							<br/><br/>
 							Please reach out to <a href="mailto:inquiries@supportivemindscounseling.com">inquiries@supportivemindscounseling.com</a> for more information.
 						</article>
